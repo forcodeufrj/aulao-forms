@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição - Processo Seletivo</title>
+    <link rel="stylesheet" href="./forms3.css">
+    <link rel="shortcut icon" href="./simbolo.svg" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="./index.html"><img src="./logo.svg" alt="logo principal da for_code" class="cabecalho-imagem"></a>
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-itens" href="#">Sobre</a>
+            <a class="cabecalho-menu-itens" href="#">Contato</a>
+            <a class="cabecalho-menu-itens" href="#">Processo Seletivo</a>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo-subtitulo"><h1 id="titulo">Formulário - <span id="amarelo">Página 3</span></h1>
+            <p><h4 id="subtitulo">Preencha com suas informações</p></h4>
+            <p></p>
+        </div>
+
+        <form action="">
+        <fieldset class="experiencias">
+            <legend>Experiências Pessoais</legend><p></p>
+
+        <div>
+            <label for="experiencias">10. Você possui experiências anteriores? Se sim, quais?</label><br>
+            <textarea class="caixotas" id="experiencia" placeholder="Nos conte sobre suas experiências!"></textarea></p>
+        </div>
+        
+        <div class="diretoria">
+            <label>11. Para qual diretoria você gostaria entrar?</label>
+            <select class="caixotas" id="diretoria">
+                <option selected disabled value="">Selecione</option>
+                <option>Projetos</option>
+                <option>Presidência</option>
+                <option>Pessoas</option>
+                <option>Marketing</option>
+            </select> <p></p>
+
+        </div>
+
+        <div class="curriculo">
+            <label>12. Anexe seu currículo:</legend><p></p>
+            <input type="file" aceppt=".pdf"><p></p>
+        </div>
+        </fieldset>
+
+        <input type="reset" value="Limpar" class="botao" id="botao-limpar">
+        </form><p></p>
+        <div class="botoes">
+            <a href="./forms2.html"><button class="botao">Página Anterior</button></a>
+            <a href="./index.html"><button onclick="clicar()" class="botao">Enviar</button></a>
+        </div>
+    </main>
+    <footer>
+        <p> for_code - Todos os direitos reservados &copy; 2023</p>
+    </footer>
+</body>
+    <script>
+        function clicar(){
+            window.alert('Obrigado por se inscrever no nosso PS!')
+        }
+    </script>
+</html>
